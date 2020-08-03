@@ -1,15 +1,16 @@
 import { User } from './models/User';
 import Axios from 'axios';
 import { UserEdit } from './views/UserEdit';
+import { UserList } from './views/UserList';
+import { userInfo } from 'os';
 
 Axios.defaults.baseURL = 'http://localhost:3000';
 
-const user = User.build({ name: 'Dainius', age: 20 });
 const root = document.getElementById('root');
+const users = User.buildCollection();
 
-if (root) {
-  const userEdit = new UserEdit(root, user);
-  userEdit.render();
+users.fetch();
 
-  console.log(userEdit);
-}
+users.on('change', () => {
+  if (root) new UserList(root, users).render();
+});
