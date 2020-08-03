@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Dainiuxas"
+    },
+    {
+      "name": "Dainius",
+      "age": 20,
+      "id": 2
+    },
+    {
+      "name": "Dainius",
+      "age": 20,
+      "id": 3
+    },
+    {
+      "name": "Dainius",
+      "age": 20,
+      "id": 4
+    },
+    {
+      "name": "Dainius",
+      "age": 20,
+      "id": 5
+    },
+    {
+      "name": "Dainius",
+      "age": 71,
+      "id": 6
+    }
+  ]
+}

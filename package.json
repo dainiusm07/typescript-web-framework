@@ -1,0 +1,24 @@
+{
+  "name": "web-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn src/index.ts",
+    "start:db": "json-server -w db.json",
+    "start:parcel": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^14.0.27",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "json-server": "^0.16.1",
+    "parcel-bundler": "^1.12.4"
+  }
+}
